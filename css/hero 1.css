@@ -16,8 +16,10 @@ h1{
 
 header img{
     border-radius: 174px;
+    max-width: 100%;
     width: 300px;
     border: 24px solid black
+
 }
 
 .content{
@@ -46,6 +48,57 @@ a{
 	color: red;
 	text-decoration: none;
 }
+
+#slideshow {
+	text-align: center;
+	position: absolute;
+    width: 1020px;
+    height: 500px;
+    margin: 15px auto;
+    overflow: hidden;
+   
+}
+.s1, .s2, .s3
+{
+  position: absolute;
+  width:1020px;
+  height: 500px;
+}
+.s1{left: 0; }
+.s2{left: 1020px;}
+.s3{left: 2020px;}
+
+}
+#sContent li {
+	display: inline;
+}
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+@keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	35%, 50% {
+		left: -1020px; /*2ème image*/
+	}
+	70%, 85% {
+		left: -2020px; /*3ème image*/
+	}
+
 
 
 footer{
