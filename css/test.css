@@ -1,0 +1,37 @@
+body{
+	background-color: lightpink
+}
+h1{
+	color: orange;
+	font-size: 90px;
+	text-decoration-style: solid;
+}
+
+#first{
+	font-size: 90px;
+	font-family: verdana;
+	color: black;
+	border: 1px solid powderblue;
+}
+#second{
+	font-size: 60px;
+	color: red;
+	text-decoration: dashed underline overline blue
+
+}
+		.small{
+	font-size: 12px;
+}
+
+h2{
+	font-size: 22px;
+	color: green;
+}
+
+span{
+	font-style: italic;
+}
+
+h2 span{
+	text-decoration: line-through;
+}
